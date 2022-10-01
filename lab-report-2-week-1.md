@@ -2,13 +2,13 @@
 ## Tutorial: How to log into a course specific account on `ieng6`
 
 ### Step1: VS Code
-Download VS Code at this link: https://code.visualstudio.com/
+Download VS Code at this link: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 ![Screenshot 2022-09-30 203109](https://user-images.githubusercontent.com/114527221/193386022-e54e550f-4368-4a7f-a804-2b7bf6c984de.jpg)
 
 This shows a download page that will apear when clicking the link. Click the link and download the latest version of VS Code to your computer. Make sure you get the version that correlates to the type of processing system you have.
 
 ### Step2: Remotely Connecting
-Find your student login to `ieng6` at: https://sdacs.ucsd.edu/~icc/index.php and set a password for your account.
+Find your student login to `ieng6` at: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php) and set a password for your account.
 
 Then open a terminal in VS Code using the "New Terminal" button.
 Type the command `ssh cs15lfa22zz@ieng6.ucsd.edu` replacing the "zz" with your specific login username. This will log you into the remote server.
