@@ -69,5 +69,41 @@ I add two more objects to the list and then I run a query for the term "apple". 
 
 In this picture there is no query and the path is equal to "/". This runs the first if statement in the `handleRequest` method. A for loop is ran to add each string within the search engine list into an output string and then the string of words is printed onto the screen.
 
+# Part 2
+
+## Bug 1:
+
+![image](https://user-images.githubusercontent.com/114527221/198749073-85bcb589-ffb4-4b91-994c-db8049dd5a1c.png)
+
+This is the failure inducing test of the `reverse` method.
+
+![image](https://user-images.githubusercontent.com/114527221/198749258-a9fb9a9a-5d35-4c11-8baa-d4d812fa3f33.png)
+
+This is the error that is produced by the test.
+
+![image](https://user-images.githubusercontent.com/114527221/198749495-6bd7aedd-256e-4e49-b5b3-ec58a9aea7de.png)
+
+Both the "arr" seen in this code need to be "newArray". 
+The reason why this test fails is because the `reverse` method returns the same array that was input into the method. So the original array is returned and no reveresed array is returned.
+
+## Bug 2:
+
+![image](https://user-images.githubusercontent.com/114527221/198750119-1ba5edb2-bb09-411a-b8f1-9357cd2238c5.png)
+
+This is the failure inducing test of the `filter` method.
+
+![image](https://user-images.githubusercontent.com/114527221/198750376-b24576e4-37c5-4344-8433-511bb5b078bf.png)
+
+This is the error that is produced by the test.
+
+![image](https://user-images.githubusercontent.com/114527221/198750464-29b26459-9031-45e1-b06b-a252a94d849f.png)
+
+This is a picture of the error. Every string is added to the beggining of the list rather then the end of the list. To fix this, simply take out the index of the add function and the strings will be added to the end of the list. The original code is bugged because it returns a correct list of strings in the reverse.
+
+
+
+
+
+
 
 
