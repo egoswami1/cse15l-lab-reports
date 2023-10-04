@@ -4,6 +4,8 @@ The following examples presented demonstrate the use of 3 different commands to 
 
 ---
 ## 1. `cd`
+This command is used to change the current working directory to a different one.
+
 Example of using `cd` with no arguments:
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/b74be326-000d-4e2c-a202-5651ee729858)
@@ -22,8 +24,38 @@ This will allow the terminal to find the file we want to work with:
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/55d044b6-977d-4587-aede-44bb8d40ce7f)
 
-As we can see, the terminal responded with an error saying that the file we used as an argument isn't a directory. Only a directory can be an argument for this command. Thus, the working directory is stil `user@sahara ~/lecture1/messages`.
+As we can see, the terminal responded with an error saying that the file we used as an argument isn't a directory. Only a directory can be an argument for this command. Thus, the working directory is still `user@sahara ~/lecture1/messages`.
 
 ---
 ## 2. `ls`
+This command lists files and directories of a specified location.
+
+Example of using `ls` with no arguments. Our currenting working directory is `user@sahara ~/lecture1`:
+
+![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/ca7756e8-5bb3-4e0d-8e81-31ec3d73c64e)
+
+Because we started in the `lecture1` directory, this command responded without error with all of the contents within the `lecture1` directory.
+
+Example of using `ls` with a path to a directory as an argument. We are once again starting in the `user@sahara ~/lecture1` directory:
+
+![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/4151e008-8dd1-4e04-a914-fc2ad04091be)
+
+Once again the command ran without error. In this instance, the command responded with all of the contents of the `messages` directory even though that wasn't our current working directory because we specified a path to that directory in the argument.
+
+Example of using `ls` with a path to a file as an argument. This time, we are starting in the `user@sahara ~/lecture1/messages` directory:
+
+![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/77473d58-3fc3-4195-8a61-a77c2471c1a8)
+
+There was no error when this command ran. Because we specified a file, the command could only respond with that file because there are no other files or directories under the specified file.
+
+---
+## 3. `cat`
+This command prints the contents of a file.
+
+
+
+
+
+
+
 
