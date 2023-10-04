@@ -8,21 +8,22 @@ Example of using `cd` with no arguments:
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/b74be326-000d-4e2c-a202-5651ee729858)
 
-As we can see, nothing happens!
+As we can see, nothing happens! The working directory is still the original directory. This happens because cd needs a directory as an argument to move the working directory to. In this case we aren't telling the current working directory to change to anything.
 
 Example of using `cd` with a path to a directory as an argument. We will be using the directory `lecture1`:
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/58524b39-5a0e-4320-a24e-90972ad89a16)
 
-This time, the current working directory changes to `user@sahara ~/lecture1`
+This time, the current working directory changes to `user@sahara ~/lecture1` because we gave the command a relative path to a directory to move to.
 
 Example of using `cd` with a path to a file as an argument. We will be using the file `en-us.txt `.
 First we will change the current working directory to `user@sahara ~/lecture1/messages` and then try the new argument.
 This will allow the terminal to find the file we want to work with:
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/55d044b6-977d-4587-aede-44bb8d40ce7f)
-As we can see, the terminal responded saying that the file we used as an argument 
 
+As we can see, the terminal responded with an error saying that the file we used as an argument isn't a directory. Only a directory can be an argument for this command. Thus, the working directory is stil `user@sahara ~/lecture1/messages`.
 
+---
 
 
