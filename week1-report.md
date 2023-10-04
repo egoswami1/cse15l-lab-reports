@@ -25,5 +25,5 @@ This will allow the terminal to find the file we want to work with:
 As we can see, the terminal responded with an error saying that the file we used as an argument isn't a directory. Only a directory can be an argument for this command. Thus, the working directory is stil `user@sahara ~/lecture1/messages`.
 
 ---
-
+## 2. `ls`
 
