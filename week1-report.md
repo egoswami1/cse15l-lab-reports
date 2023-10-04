@@ -8,7 +8,7 @@ Example of using `cd` with no arguments:
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/b74be326-000d-4e2c-a202-5651ee729858)
 
-As we can see, nothing happens! The working directory is still the original directory. This happens because cd needs a directory as an argument to move the working directory to. In this case we aren't telling the current working directory to change to anything.
+As we can see, nothing happens! The working directory is still the original directory. This happens because `cd` needs a directory as an argument to move the working directory to. In this case we aren't telling the current working directory to change to anything.
 
 Example of using `cd` with a path to a directory as an argument. We will be using the directory `lecture1`:
 
