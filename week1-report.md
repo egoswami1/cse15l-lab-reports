@@ -52,6 +52,18 @@ There was no error when this command ran. Because we specified a file, the comma
 ## 3. `cat`
 This command prints the contents of a file.
 
+Example of using `cat` with no arguments. Our current working directory is `user@sahara ~/lecture1/messages`:
+
+![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/867b2ba5-bde8-4537-aaad-ddf22cc93fa4
+
+In this example there was no error but the code doesn't stop running until we press ctrl-c. In this instance it is waiting for an input because we did not give it one. The working directory does not change.
+
+Example of using `cat` with a path to a directory as an argument. Our starting working directory is the `lecture1` directory.
+
+
+
+
+
 
 
 
