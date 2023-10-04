@@ -60,14 +60,9 @@ In this example there was no error but the code doesn't stop running until we pr
 
 Example of using `cat` with a path to a directory as an argument. Our starting working directory is the `lecture1` directory.
 
+![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/f1d55d49-e97f-4c70-8190-7b40bf9c9bcd)
 
-
-
-
-
-
-
-
+![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/3c5853e7-4825-4424-8a3c-dba89185ed14)
 
 
 
