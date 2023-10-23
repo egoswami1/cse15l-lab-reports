@@ -10,7 +10,9 @@ Example of using `cd` with no arguments:
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/b74be326-000d-4e2c-a202-5651ee729858)
 
-As we can see, nothing happens! The working directory is still the original directory. This happens because `cd` needs a directory as an argument to move the working directory to. In this case we aren't telling the current working directory to change to anything.
+As we can see, nothing happens! The working directory is still the home directory. This happens because `cd` needs a directory as an argument to move the working directory to. In this case we aren't telling the current working directory to change to anything. However this is a special case. If we start in a different directory other than the home directory, typing the command `cd` without any arguments will always bring us back to the home directory as shown below.
+
+<img width="189" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/4787373d-c9bf-4fe9-87fc-99eb9967f7ba">
 
 Example of using `cd` with a path to a directory as an argument. We will be using the directory `lecture1`:
 
@@ -54,15 +56,15 @@ This command prints the contents of a file.
 
 Example of using `cat` with no arguments. Our current working directory is `/home/lecture1/messages`:
 
-![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/867b2ba5-bde8-4537-aaad-ddf22cc93fa4)
+<img width="148" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/397e47f8-a1ec-472a-8e90-7d4375048fa3">
 
-In this example there was no error but the code doesn't stop running until we press ctrl-c. In this instance it is waiting for an input because we did not give it one. The working directory does not change.
+In this example there was no error but the code doesn't stop running until we press ctrl-c. In this instance it is waiting for an input because we did not give it one. Typing a string of characters into the terminal and clicking enter will duplicate the typed string because `cat` is printing what we are typing. The working directory does not change.
 
 Example of using `cat` with a path to a directory as an argument. Our starting working directory is the `lecture1` directory.
 
 ![image](https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/f1d55d49-e97f-4c70-8190-7b40bf9c9bcd)
 
-As specified earlier, the `cat` command prints the contents of a file and the `messages` directory is not a file. Thus, the terminal responds with the above message.
+As specified earlier, the `cat` command prints the contents of a file and the `messages` directory is not a file. Thus, the terminal responds with the above error message.
 
 Example of using `cat` with a path to a file as an argument. Our starting directory is `/home/lecture1/messages`:
 
