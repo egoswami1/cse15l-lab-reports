@@ -39,4 +39,10 @@ class StringServer {
 }
 ```
 
+## Examples of Using the `/add-message` Command:
 
+First Example:
+
+<img width="511" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/1da0919e-3326-4273-a2f2-914a0d8d4f7c">
+
+In this example, I typed a URL with a path containing the words, `/add-message`. This entire URL acted as the `URI uri` input for a new `handleRequest`. Within this program, the method first checks 
