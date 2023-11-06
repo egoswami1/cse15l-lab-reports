@@ -51,4 +51,20 @@ Second Example:
 
 <img width="526" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/fa146bbb-1197-4c08-8b14-2a4733b57234">
 
-This example if similar to the first accept the starting value of `wordNum` is now 1 and the starting value of `print` is "1. Hello\n"In this example, I typed a URL with a path containing the words, `/add-message`. This entire URL acted as the `URI url` input for a new `handleRequest`. Within this program, the method checks that the URL contains the string `add-message`. Because this is true, the method splits the query of the URL using the `getQuery()` method. The contents are stored in an array called `paramaters`. The contents of this array are ("s", "Hello"). The program then checks if the first element of the array is the string "s". Because it is, the integer variable, `wordNum` is incremented by 1. This variable keeps track of how words are stored within the `print` string. The `print` string stores all the words that are printed onto the server page. After `wordNum` is incremented, the second element of parameter, aka the content to be printed, is formatted into the `print` string and then returned by the method where it is brodcasted onto the webpage as "1. Hello". The print string reads, "1. Hello \n".
+This example if similar to the first accept the starting value of `wordNum` is now 1 and the starting value of `print` is "1. Hello\n" is the contents of the `print` string. In this example, I once again typed a URL with a path containing the words, `/add-message`. This entire URL acted as the `URI url` input for a new `handleRequest`. Within this program, the method checks that the URL contains the string `add-message`. Because this is true, the method splits the query of the URL using the `getQuery()` method. The contents are stored in an array called `paramaters`. The contents of this array are ("s", "World!"). The program then checks if the first element of the array is the string "s". Because it is, the integer variable, `wordNum` is incremented by 1. This means it is now 2. After `wordNum` is incremented, the second element of parameter, aka the content to be printed, is formatted into the `print` string and then returned by the method where it is brodcasted onto the webpage as "1. Hello\n 2. World!\n". The print string reads, "1. Hello\n 2. World!\n".
+
+## Screenshots
+
+Private Key:
+
+<img width="288" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/3b6d0c20-5838-476e-b9d4-20559f46a3cf">
+
+Public Key:
+
+<img width="468" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/d47ac839-5fcb-4cd6-9fe0-1140bef37437">
+
+
+
+I did not know that we could set up a remote server key in a way where I didn't have to type in my password to login. It is interesting that we can set up folders on both the remote and public computers that allow for this to happen.
+
+
