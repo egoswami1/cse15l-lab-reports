@@ -97,8 +97,12 @@ static List<String> merge(List<String> list1, List<String> list2) {
   return result;
 }
 ```
-In the scenario that all of the words in `list1` were already sorted the code is meant to iterate through `list2` and add the remaining words to the end of the new merged list. However, instead of increasing the variable `index2` the code was increasing `index1`. This caused the last while loop to be infinite if `list2` had the highest words on the list alphabetically. The fix was to change the `index1 += 1` to `index2 += 1`.
+In the scenario that all of the words in `list1` were already sorted the code is meant to iterate through `list2` and add the remaining words to the end of the new merged list. However, instead of increasing the variable `index2` the code was increasing `index1`. This caused the last while loop to be infinite if `list2` had the highest words on the list alphabetically. The fix was to change the `index1 += 1;` to `index2 += 1;`.
 
+---
+#Part 2 - Researching Commands
+
+The following will show different applications of the `grep` command.
 
 
 
