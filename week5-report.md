@@ -119,6 +119,7 @@ $ find -name "*2028*"
 ./plos/pmed.0020281.txt
 ```
 In this example we searched for a file wtih a name that conatined 2028 anywhere within the name. There was only 1 result in the entire directory. The `-name` option is useful because it allows a user to quickly find if a file exists or files with similar names.
+
 Second application: `find -type`
 ```
 $ find . -type d
@@ -144,6 +145,22 @@ government/Alcohol_Problems/Session4-PDF.txt
 ```
 Here we seached for all "files", signified by "f", within the specified directory and it returned the four files within the directory. This command is useful because it allows us to filter the type of response we want the terminal to respond with. If we only wanted to specifically look at all the directories or only all of the files this command filters out everything else for us and prints out exactly what we want to see.
 
+Third application: `find -
+```
+$ find -mmin 1
+./government/Alcohol_Problems/Session3-PDF.txt
+```
+In this example, I made a small edit to 1 of the files within the working directory. The `-mmin` commands expresses all files that were changed within a certain time frame. In this case within the past minute.
+```
+$ find -mmin 1
+
+```
+Yes this is the same exact input as last code but in the time it took me to explain the last code block, the edit to that file was no longer within a minute so nothing appears. This option is useful because it allows you to find edited files. For example lets say I edit a file and accidentily close out of it but I forget the file name. This option will allow me to find that file.
+```
+$ find -empty
+./government/About_LSC/empty.txt
+```
+This option finds all the empty files within a directory and prints them. In this case I made a file called `empty.txt` which was then printed back as it is the only empty file in the entire directory.
 
 
 
