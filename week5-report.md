@@ -25,7 +25,7 @@ public void testMerge2() {
 }
 ```
 
-The following is the output of running the bash script `test.sh` which runs junit tests on the previous two tests. Here is the terminal ouput:
+The following is the output of running the bash script `test.sh` which runs junit tests on the previous two tests. Here is the terminal output:
 ```
 JUnit version 4.13.2
 .E.
@@ -118,7 +118,7 @@ Here is another example:
 $ find -name "*2028*"
 ./plos/pmed.0020281.txt
 ```
-In this example we searched for a file wtih a name that conatined 2028 anywhere within the name. There was only 1 result in the entire directory. The `-name` option is useful because it allows a user to quickly find if a file exists or files with similar names.
+In this example we searched for a file with a name that contained 2028 anywhere within the name. There was only 1 result in the entire directory. The `-name` option is useful because it allows a user to quickly find if a file exists or files with similar names.
 
 Second application: `find -type`
 ```
@@ -143,19 +143,19 @@ government/Alcohol_Problems/Session2-PDF.txt
 government/Alcohol_Problems/Session3-PDF.txt
 government/Alcohol_Problems/Session4-PDF.txt
 ```
-Here we seached for all "files", signified by "f", within the specified directory and it returned the four files within the directory. This command is useful because it allows us to filter the type of response we want the terminal to respond with. If we only wanted to specifically look at all the directories or only all of the files this command filters out everything else for us and prints out exactly what we want to see.
+Here we searched for all "files", signified by "f", within the specified directory and it returned the four files within the directory. This command is useful because it allows us to filter the type of response we want the terminal to respond with. If we only wanted to specifically look at all the directories or only all of the files this command filters out everything else for us and prints out exactly what we want to see.
 
 Third application: `find -
 ```
 $ find -mmin 1
 ./government/Alcohol_Problems/Session3-PDF.txt
 ```
-In this example, I made a small edit to 1 of the files within the working directory. The `-mmin` commands expresses all files that were changed within a certain time frame. In this case within the past minute.
+In this example, I made a small edit to 1 of the files within the working directory. The `-mmin` command expresses all files that were changed within a certain time frame. In this case within the past minute.
 ```
 $ find -mmin 1
 
 ```
-Yes this is the same exact input as last code but in the time it took me to explain the last code block, the edit to that file was no longer within a minute so nothing appears. This option is useful because it allows you to find edited files. For example lets say I edit a file and accidentily close out of it but I forget the file name. This option will allow me to find that file.
+Yes this is the same exact input as the last code but in the time it took me to explain the last code block, the edit to that file was no longer within a minute so nothing appears. This option is useful because it allows you to find edited files. For example let's say I edit a file and accidentally close out of it but I forget the file name. This option will allow me to find that file.
 ```
 $ find -empty
 ./government/About_LSC/empty.txt
@@ -165,7 +165,7 @@ This option finds all the empty files within a directory and prints them. In thi
 $ find -empty -name "*.txt"
 ./government/About_LSC/empty.txt
 ```
-I made another empty file within the directory but this time I made it an empty java file. This time I ran the empty command but I also specified that I wanted only the empty files with a name ending in "*.txt". Thus it only printed the one file. The `-empty` option is useful because it allows us find any files that are completely empty that we may have forgot about. There is no point in purposeless empty files so it is useful to find them and delete them.
+I made another empty file within the directory but this time I made it an empty java file. This time I ran the empty command but I also specified that I wanted only the empty files with a name ending in "*.txt". Thus it only printed the one file. The `-empty` option is useful because it allows us to find any files that are completely empty that we may have forgotten about. There is no point in purposeless empty files so it is useful to find them and delete them.
 
 --- 
 This concludes Lab Report 3!
