@@ -102,7 +102,24 @@ In the scenario that all of the words in `list1` were already sorted the code is
 ---
 #Part 2 - Researching Commands
 
-The following will show different applications of the `grep` command.
+The following will show different applications of the `find` command.
+
+First `find -name`
+```
+$ find -name "*Aid.txt"
+./government/Media/Coup_Reshapes_Legal_Aid.txt
+./government/Media/Marylands_Legal_Aid.txt
+./government/Media/Poor_Lacking_Legal_Aid.txt
+./government/Media/Providing_Legal_Aid.txt
+```
+In this example, the find command found every file within `/technical` that had a name that ended with "Aid.txt". The asterisk specifies that the file name before "Aid.txt" does not matter.
+Here is another example:
+```
+$ find -name "*2028*"
+./plos/pmed.0020281.txt
+```
+In this example we searched for a file wtih a name that conatined 2028 anywhere within the name. There was only 1 result in the entire directory.
+
 
 
 
