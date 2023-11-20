@@ -161,6 +161,13 @@ $ find -empty
 ./government/About_LSC/empty.txt
 ```
 This option finds all the empty files within a directory and prints them. In this case I made a file called `empty.txt` which was then printed back as it is the only empty file in the entire directory.
+```
+$ find -empty -name "*.txt"
+./government/About_LSC/empty.txt
+```
+I made another empty file within the directory but this time I made it an empty java file. This time I ran the empty command but I also specified that I wanted only the empty files with a name ending in "*.txt". Thus it only printed the one file. The `-empty` option is useful because it allows us find any files that are completely empty that we may have forgot about. There is no point in purposeless empty files so it is useful to find them and delete them.
 
+--- 
+This concludes Lab Report 3!
 
 
