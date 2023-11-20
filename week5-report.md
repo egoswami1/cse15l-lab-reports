@@ -118,7 +118,31 @@ Here is another example:
 $ find -name "*2028*"
 ./plos/pmed.0020281.txt
 ```
-In this example we searched for a file wtih a name that conatined 2028 anywhere within the name. There was only 1 result in the entire directory.
+In this example we searched for a file wtih a name that conatined 2028 anywhere within the name. There was only 1 result in the entire directory. The `-name` option is useful because it allows a user to quickly find if a file exists or files with similar names.
+Second application: `find -type`
+```
+$ find . -type d
+.
+./911report
+./biomed
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+./plos
+```
+In this example, the `-type` option searches for only a specific type of response. In this case, we signified we wanted type "d" which refers to "directories". The terminal then printed all the directories found within `technical` including the working directory itself.
+```
+$ find government/Alcohol_Problems/ -type f
+government/Alcohol_Problems/DraftRecom-PDF.txt
+government/Alcohol_Problems/Session2-PDF.txt
+government/Alcohol_Problems/Session3-PDF.txt
+government/Alcohol_Problems/Session4-PDF.txt
+```
+Here we seached for all "files", signified by "f", within the specified directory and it returned the four files within the directory. This command is useful because it allows us to filter the type of response we want the terminal to respond with. If we only wanted to specifically look at all the directories or only all of the files this command filters out everything else for us and prints out exactly what we want to see.
 
 
 
