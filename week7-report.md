@@ -1,9 +1,9 @@
 # Lab Report 4: Vim
 
 ---
-For this lab report I will reproduce the vim task from lab but I will take screenshots and record keystrokes at every step.
+For this lab report I will reproduce the vim task from the lab but I will take screenshots and record keystrokes at every step.
 
-Before starting the timer/task I will note that I have already ran this task prior to this trial and thus have a history of terminal commands that I will reuse using arrow keys. My keystrokes and explanation will be included at every step so that there is no confusion. Additionally I will start with the clone ssh url of the lab7 directory already copied to my clipboard. Let's start! I will begin at step 4.
+Before starting the timer/task I will note that I have already run this task prior to this trial and thus have a history of terminal commands that I will reuse using arrow keys. My keystrokes and explanation will be included at every step so that there is no confusion. Additionally I will start with the clone ssh url of the lab7 directory already copied to my clipboard. Let's start! I will begin at step 4.
 
 ## Step 4: Login to ieng6
 <img width="611" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/a7ce12c6-f58c-4337-991a-dd8e661ebbf2">
@@ -32,13 +32,13 @@ The above image shows the failing results of running the tests.
 ---
 <img width="313" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/0f1aac6f-b9b7-4481-825b-d4cee543bea1">
 
-Keys pressed: `<up><up><up><up><up><up><up><up><up><up><up><up><enter>` `<r><2><:><w><q><enter>` The `vim ListExamples.java` command was 12 up in the search history so I used the up arrow key to access it. This opened the `ListExamples.java` file and allowed me to makes edits. I then clicked the following 2 keys to replace the "1" with a "2" on line 34 in the variable called `index1`. The final three keys save the file and exit me out of vim editing.
+Keys pressed: `<up><up><up><up><up><up><up><up><up><up><up><up><enter>` `<r><2><:><w><q><enter>` The `vim ListExamples.java` command was 12 up in the search history so I used the up arrow key to access it. This opened the `ListExamples.java` file and allowed me to make edits. I then clicked the following 2 keys to replace the "1" with a "2" on line 34 in the variable called `index1`. The final three keys save the file and exit me out of vim editing.
 I added multiple images to include what it looks like within vim editing.
 
 ## Step 8: Run the tests, demonstrating success
 <img width="265" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/e7ee3360-c099-4510-a7ea-32cef724ec59">
 
-Keys pressed: `<up><up><enter>` The `bash test.sh` command was 2 up in the search history beause we just used it so I used the up arrow key to access it.
+Keys pressed: `<up><up><enter>` The `bash test.sh` command was 2 up in the search history because we just used it so I used the up arrow key to access it.
 
 The above image shows the now successful tests.
 
@@ -50,4 +50,4 @@ The above image shows the now successful tests.
 
 Keys pressed: `<up><up><up><up><up><up><up><up><up><up><up><enter>` `<up><up><up><up><up><up><up><up><up><up><up><enter>` `<up><up><up><up><up><up><up><up><up><up><up><enter>` `<a><f><i><x><e><d><esc><:><w><q>` The `git add ListExamples.java` command was 11 up in the search history so I used the up arrow key to access it. I repeated the key presses to access `git push` and `git commit`. Then I used the following arrow keys to type in the commit message "fixed", saved, and exited the file.
 
-The image shows me adding, pushing, and commiting `ListExamples.java` and a picture of me typing "fixed" for the commit message.
+The image shows me adding, pushing, and committing `ListExamples.java` and a picture of me typing "fixed" for the commit message.
