@@ -20,9 +20,14 @@ The above picture shows the lab7 repository cloned.
 ## Step 6: Run the tests, demonstrating that they fail
 <img width="480" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/454722fc-ec60-4ed7-9c41-67999dfb40e7">
 
-Keys pressed: `<up><up><up><up><up><up><up><up><up><up><up><up><enter>``<up><up><up><up><up><up><up><up><up><up><enter>` The `cd lab7/` command was 12 up in the search history so I used the up arrow key to access it and switch the working directory. Similarly the `bash test.sh` command was 10 up in the search history so I used the up arrow key to access it. 
+Keys pressed: `<up><up><up><up><up><up><up><up><up><up><up><up><enter>` `<up><up><up><up><up><up><up><up><up><up><enter>` The `cd lab7/` command was 12 up in the search history so I used the up arrow key to access it and switch the working directory. Similarly the `bash test.sh` command was 10 up in the search history so I used the up arrow key to access it. 
 The above image shows the failing results of running the tests.
 
 ## Step7: Edit the code to fix the failing test
+<img width="463" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/5e8f553d-4abc-451a-8430-ad5f0aaa0861">
 
-Keys pressed: `<up><up><up><up><up><up><up><up><up><up><up><up><enter>``<r><2>` The `vim ListExamples.java` command was 12 up in the search history so I used the up arrow key to access it which opens the file within terminal allows me to edit. I then clicked the following 2 keys to replace the "1" with a "2" on line 34 in the variable called `index1`.
+---
+<img width="313" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/0f1aac6f-b9b7-4481-825b-d4cee543bea1">
+
+Keys pressed: `<up><up><up><up><up><up><up><up><up><up><up><up><enter>` `<r><2><:><w><q><enter>` The `vim ListExamples.java` command was 12 up in the search history so I used the up arrow key to access it. This opened the `ListExamples.java` file and allowed me to makes edits. I then clicked the following 2 keys to replace the "1" with a "2" on line 34 in the variable called `index1`. The final three keys save the file and exit me out of vim editing.
+I added multiple images to include what it looks like within vim editing.
