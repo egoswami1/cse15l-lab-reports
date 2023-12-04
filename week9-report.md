@@ -1,6 +1,7 @@
 # Lab Report 5: Putting it All Together
 
 ---
+# Part 1 - Debugging Scenario
 For this lab report I will introduce a debugging scenario between a student and a TA as it would appear on an app like EdStem.
 
 ## Post 1: Symptom
@@ -30,3 +31,94 @@ The string of letters at the bottom is the order in which they appear in the `re
 <img width="930" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/644b79ed-c105-42dc-a6db-b13873fe337d">
 
 In this small drawing I labeled the elements in the list, which list the specific element came from, and the order in which they were added to the list. This is interesting because the elements were added in the correct order but the first four elements were added in backwards into the list. Looking further into my code, I found that I had a bug relating to the placement of where elements were added into the merged list. Taking a closer look I found that in the first while loop, elements were always added to the front of the list rather than the back, so although the elements were added to the merged list in the correct order, the first four elements than ran within the while loop were being added in reverse order.
+
+## The Set Up:
+
+The file and directories prior to fixing or tampering with the code is within this directory: https://github.com/egoswami1/lab7.git
+I changed both `ListExamples.java` and `ListExamplesTests.java`. All of the files were originally from a directory given to us in class.
+Here is the code for those two files.
+
+```ruby
+import java.util.ArrayList;
+import java.util.List;
+
+interface StringChecker { boolean checkString(String s); }
+
+class ListExamples {
+
+  // Returns a new list that has all the elements of the input list for which
+  // the StringChecker returns true, and not the elements that return false, in
+  // the same order they appeared in the input list;
+  static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+
+
+  // Takes two sorted list of strings (so "a" appears before "b" and so on),
+  // and return a new list that has all the strings in both list in sorted order.
+  static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < list1.size() && index2 < list2.size()) {
+      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+        result.add(0, list1.get(index1));
+        index1 += 1;
+      }
+      else {
+        result.add(0, list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+    }
+    return result;
+  }
+
+
+}
+```
+Note that the `filter` method was not used within this report.
+
+```ruby
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.util.*;
+import java.util.ArrayList;
+
+
+public class ListExamplesTests {
+	@Test(timeout = 500)
+	public void testMerge1() {
+    	List<String> l1 = new ArrayList<String>(Arrays.asList("a"));
+		List<String> l2 = new ArrayList<String>(Arrays.asList("a", "a"));
+		assertArrayEquals(new String[]{ "a", "a", "a",}, ListExamples.merge(l1, l2).toArray());
+	}
+	
+	@Test(timeout = 500)
+    	public void testMerge2() {
+		List<String> l1 = new ArrayList<String>(Arrays.asList("a", "b", "c"));
+		List<String> l2 = new ArrayList<String>(Arrays.asList("c", "d", "e"));
+		assertArrayEquals(new String[]{ "a", "b", "c", "c", "d", "e" }, ListExamples.merge(l1, l2).toArray());
+    	}
+}
+```
+
+To trigger the bug I ran the test file using a bash script called test.sh. This was premade with the original directory. After `cd lab7/` to get into the correct working directory, the exact terminal line was `bash test.sh`.
+
+To fix the bug you get rid of the zeros within the add to list commands. So, `result.add(0, list1.get(index1));` would turn into `result.add(list1.get(index1));` and `result.add(0, list2.get(index2));` would turn into `result.add(list2.get(index2));`. This makes it so elements added within the while loop will be added to the end of the merged list rather than the front.
+
+# Part 2 - Reflection
+
+The coolest thing I learned in the second half of the quarter was definetly vim. While it looks inconvenient if you have access to a text editor I still think it is pretty cool to be able to edit and update entire files using only the terminal. In the future I might even just use vim to edit files because it's kind of fun to do. I also found that being able to commit changed files directly from the terminal back to github is very useful. Saves a lot of unneeded transfering steps.
