@@ -18,7 +18,7 @@ I know the merge method is supposed to merge two sorted lists into one sorted li
 
 ## Post 2: TA Response
 
-Hi! Looking at your screenshots and your code I can suggest a few things. The most general in any case is to manually process your code by hand. Run through your code using your inputs and write down what you get in your notes. Using that information analyze the order in which elements are placed in the new list or any unusual actions that you may want to look into, like the addition of new elements or the loss of elements. How are your elements added into your merged list and where?
+Hi! Looking at your screenshots and your code I can suggest a few things. The most general in any case is to manually process your code by hand. Run through your code using your inputs and write down what you get in your notes. Using that information, analyze the order in which elements are placed in the new list or any unusual actions that you may want to look into, like the addition of new elements or the loss of elements. How are your elements added into your merged list and where?
 
 ## Post 3: Student Testing/Response
 
@@ -30,7 +30,7 @@ The string of letters at the bottom is the order in which they appear in the `re
 
 <img width="930" alt="image" src="https://github.com/egoswami1/cse15l-lab-reports/assets/114527221/644b79ed-c105-42dc-a6db-b13873fe337d">
 
-In this small drawing I labeled the elements in the list, which list the specific element came from, and the order in which they were added to the list. This is interesting because the elements were added in the correct order but the first four elements were added in backwards into the list. Looking further into my code, I found that I had a bug relating to the placement of where elements were added into the merged list. Taking a closer look I found that in the first while loop, elements were always added to the front of the list rather than the back, so although the elements were added to the merged list in the correct order, the first four elements than ran within the while loop were being added in reverse order.
+In this small drawing I labeled the elements in the list, which list the specific element came from, and the order in which they were added to the list. This is interesting because the elements were added in the correct order but the first four elements were added backwards into the list. Looking further into my code, I found that I had a bug relating to the placement of where elements were added into the merged list. Taking a closer look I found that in the first while loop, elements were always added to the front of the list rather than the back, so although the elements were added to the merged list in the correct order, the first four elements that ran within the while loop were being added in reverse order.
 
 ## The Set Up:
 
@@ -121,4 +121,4 @@ To fix the bug you get rid of the zeros within the add to list commands. So, `re
 
 # Part 2 - Reflection
 
-The coolest thing I learned in the second half of the quarter was definetly vim. While it looks inconvenient if you have access to a text editor I still think it is pretty cool to be able to edit and update entire files using only the terminal. In the future I might even just use vim to edit files because it's kind of fun to do. I also found that being able to commit changed files directly from the terminal back to github is very useful. Saves a lot of unneeded transfering steps.
+The coolest thing I learned in the second half of the quarter was definitely vim. While it looks inconvenient if you have access to a text editor I still think it is pretty cool to be able to edit and update entire files using only the terminal. In the future I might even just use vim to edit files because it's kind of fun to do. I also found that being able to commit changed files directly from the terminal back to github is very useful. Saves a lot of unneeded transfering steps.
